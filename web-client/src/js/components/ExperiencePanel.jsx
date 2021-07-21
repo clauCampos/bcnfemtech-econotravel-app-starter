@@ -1,6 +1,11 @@
 import * as React from 'react';
 import {useEffect, useState} from "react";
 import {ExperienceApi} from "../apis/experiencesApi"
+import {NavigationBar} from "./NavigationBar";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {About} from "./About";
+import {Catalog} from "./Catalog";
+
 
 export const ExperiencePanel = () => {
 
@@ -12,19 +17,46 @@ export const ExperiencePanel = () => {
     useEffect(() => {
         let experienceApi = new ExperienceApi()
         experienceApi.getExperiences()
-            .then( experiences => setExperiences(experiences))
+            .then(experiences => setExperiences(experiences))
     }, []);
 
-    return <div className={"experiencesList"}>
-        <p className={"experiencesList__title"}>Experiences</p>
+
+    const travelList = [
+        {
+            title: "Paseo en la montaña",
+            tag: "senderismo"
+        },
+        {
+            title: "Ida a la playa",
+            tag: "Diversion"
+        },
+        {
+            title: "Paseo en bote",
+            tag: "Diversion"
+        }
+    ]
+
+    return <Router className={"experiencesList"}>
+        <NavigationBar/>
+        <Switch>
+            <Route path="/catalog">
+                <Catalog experiencias={travelList}/>
+            </Route>
+            <Route path="/about">
+                <About/>
+            </Route>
+        </Switch>
+
+
+        {/* <p className={"experiencesList__title"}>Experiences </p>
         <div className={"experiencesList__list"}>
             {experiences.map((experience) =>
                 <div className={"experiencesList__item experience"}>
                     <div className={"experience__name"}> {experience.name} </div>
-                    <div className={"experience__details"}> {experience.pricePerPerson + " €" } </div>
+                    <div className={"experience__details"}> {experience.pricePerPerson + " €"} </div>
                 </div>
             )}
-        </div>
-    </div>
+        </div>*/}
+    </Router>
 
 }
