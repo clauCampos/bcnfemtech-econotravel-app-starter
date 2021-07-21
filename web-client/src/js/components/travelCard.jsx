@@ -1,7 +1,7 @@
 import * as React from "react";
 
-export const travelCard = (props) =>
+export const TravelCard = (props) =>
     <div className="experiencias">
-        <div>{ experiencias.title }</div>
-        <div>{ experiencias.tag}</div>
+        <div>{ props.experiencias.title }</div>
+        <div>{ props.experiencias.tag}</div>
     </div>
