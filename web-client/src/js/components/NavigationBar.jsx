@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Link} from "react-router-dom";
-import logo from './assets/econoTravel-logo.svg';
+import logo from './assets/econoTravel-logo.png';
 
 export const NavigationBar = () =>(
 
