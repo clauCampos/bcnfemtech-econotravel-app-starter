@@ -1,36 +1,63 @@
 body{
   margin: 0;
-
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+html {
+  color: #000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.logo {
+  max-width: 180px;
 }
 .navigationBar{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
-  background-color: cornflowerblue;
-
+  width: 100%;
+  padding: 5px 70px;
+  background-color: #FFF;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
   a {
     text-decoration: none;
-    padding: 20px;
+    padding: 0 10px;
+    color: #000;
+    font-size: .85rem;
+    text-transform: uppercase;
+    &:hover{
+      color: #6EA60C;
+    }
+    &:active{
+      color: #4B7F55;
+    }
   }
-
+  input {
+    border-radius: 20px;
+    border: thin solid #4B7F55;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
 }
-
+.submit {
+  background-color: #4B7F55;
+  color: #FFF;
+}
+.menu__links {
+  margin: 0 20px;
+}
 .aboutSection{
   padding: 40px;
 }
-
 .catalogoSection{
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-
   .experiencias{
     width: 100px;
     border: thin solid black ;
     border-radius:  10px;
     margin: 10px;
     padding: 20px;
-
     &:hover{
       transform: translate(1px, 1px);
       background-color: cornflowerblue;
