@@ -7,40 +7,44 @@ html {
   color: #000;
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
+// Navigation
+
 .logo {
-  max-width: 180px;
+  max-width: 200px;
 }
 .navigationBar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 5px 70px;
+  margin: 0;
+  padding: 0 40px;
   background-color: #FFF;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+
   a {
     text-decoration: none;
-    padding: 0 10px;
     color: #000;
-    font-size: .85rem;
+    font-size: 0.9rem;
+    font-weight: 400;
     text-transform: uppercase;
+    margin: 0 30px;
+
     &:hover{
       color: #6EA60C;
     }
-    &:active{
-      color: #4B7F55;
-    }
   }
+
   input {
     border-radius: 20px;
     border: thin solid #4B7F55;
     padding: 10px 20px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
-}
-.submit {
-  background-color: #4B7F55;
-  color: #FFF;
+  input:is([type="submit"])  {
+    background-color: #4B7F55;
+    color: #FFF;
+  }
 }
 .menu__links {
   margin: 0 20px;
@@ -48,6 +52,11 @@ html {
 .aboutSection{
   padding: 40px;
 }
+
+
+
+
+
 .catalogoSection{
   display: flex;
   flex-wrap: wrap;

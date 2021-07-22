@@ -1,6 +1,8 @@
 import * as React from "react";
 import {Link} from "react-router-dom";
-import logo from './assets/econoTravel-logo.svg';
+import logo from './assets/econoTravel-logo.png';
+
+
 export const NavigationBar = () =>(
     <nav className={"navigationBar"}>
         <img className={"logo"} src={logo} alt={'EconoTravel logo'} />
@@ -14,10 +16,6 @@ export const NavigationBar = () =>(
             <label htmlFor={"Encuenta tu experiencia"}></label>
             <input type={"text"} placeholder={"Encuenta tu experiencia"} />
             <input type={"submit"} value={"Buscar"} />
-        </div>
-        <div className={"socialBar"}>
-            <Link to={"/home"}>Facebook</Link>
-            <Link to={"/about"}>Instagram</Link>
         </div>
     </nav>
 )
