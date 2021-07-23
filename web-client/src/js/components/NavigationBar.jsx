@@ -13,7 +13,6 @@ export const NavigationBar = () =>(
             <Link to={"/reservas"}>Reservas</Link>
         </div>
         <div className={"searchBar"}>
-            <label htmlFor={"Encuenta tu experiencia"}></label>
             <input type={"text"} placeholder={"Encuenta tu experiencia"} />
             <input type={"submit"} value={"Buscar"} />
         </div>
