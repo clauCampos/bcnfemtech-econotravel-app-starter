@@ -1,8 +1,8 @@
 export class ExperienceApi {
 
     // hace una llamada al backend y convierte el resultado en un JSON
-    getExperiences() {
-        return fetch("/experiences")
+    getCatalog() {
+        return fetch("/experience")
             .then(response => response.json())
     }
 }

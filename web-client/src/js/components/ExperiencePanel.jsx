@@ -1,10 +1,11 @@
+{/*
 import * as React from 'react';
 import {useEffect, useState} from "react";
 import {ExperienceApi} from "../apis/experiencesApi"
 import {NavigationBar} from "./NavigationBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {About} from "./About";
-import {Catalog} from "./Catalog";
+import {Experience} from "./Experience";
 
 
 export const ExperiencePanel = () => {
@@ -40,7 +41,7 @@ export const ExperiencePanel = () => {
         <NavigationBar/>
         <Switch>
             <Route path="/catalog">
-                <Catalog experiencias={travelList}/>
+                <Experience experiencias={travelList}/>
             </Route>
             <Route path="/about">
                 <About/>
@@ -56,7 +57,7 @@ export const ExperiencePanel = () => {
                     <div className={"experience__details"}> {experience.pricePerPerson + " €"} </div>
                 </div>
             )}
-        </div>*/}
+        </div>
     </Router>
 
-}
+}*/}
