@@ -1,3 +1,6 @@
+
+// GENERAL STYLES
+
 body{
   margin: 0;
   padding: 0;
@@ -5,57 +8,296 @@ body{
 }
 html {
   color: #000;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+p {
+  margin: 0 0 30px;
+
+  &.text--intro {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #4B7F55;
+    padding: 30px 0 50px;
+
+  }
+}
+section {
+  padding: 180px 0;
+  text-align: center;
 }
 
-// Navigation
 
-.logo {
-  max-width: 200px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// NAVBAR
+
 .navigationBar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
-  padding: 0 40px;
+  padding: 15px 30px;
   background-color: #FFF;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
 
+  .logo {
+    max-width: 130px;
+  }
+  .menu__links {
+    margin-right: 20px;
+  }
   a {
     text-decoration: none;
     color: #000;
     font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 0 30px;
+    margin: 0 20px;
 
     &:hover{
       color: #6EA60C;
+      font-weight: 600;
     }
   }
+  .searchBar {
 
-  input {
-    border-radius: 20px;
-    border: thin solid #4B7F55;
-    padding: 10px 20px;
-    margin-right: 20px;
-  }
-  input:is([type="submit"])  {
-    background-color: #4B7F55;
-    color: #FFF;
+    input {
+      border-radius: 20px;
+      border: thin solid #4B7F55;
+      padding: 10px 20px;
+      margin-right: 20px;
+    }
+    input:is([type="submit"]) {
+      background-color: #4B7F55;
+      color: #FFF;
+    }
   }
 }
-.menu__links {
-  margin: 0 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ABOUT SECTION:
+
 .aboutSection{
-  padding: 40px;
+
+  .aboutSection__text {
+    padding: 50px;
+  }
+  .aboutSection__img {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// EXPERIENCIAS SECTION:
 
 .catalogoSection{
   display: flex;
@@ -74,3 +316,85 @@ html {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RESERVAS SECTION:

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {TravelCard} from "./travelCard";
+import {TravelCard} from "./TravelCard";
 
 export const Catalog = (props) => (
     <section className="catalogoSection">
