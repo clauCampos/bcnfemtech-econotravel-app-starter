@@ -7,23 +7,23 @@ import {Experience} from "./Experience";
 import {Reservation} from "./Reservation";
 
 export const App = () => {
-  return <Router>
-    <NavigationBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/experience">
-          <Experience />
-        </Route>
-        <Route path="/reservation">
-          <Reservation />
-        </Route>
-      </Switch>
+    return <Router>
+        <NavigationBar/>
+        <Switch>
+            <Route exact path="/">
+                <Home/>
+            </Route>
+            <Route path="/about">
+                <About/>
+            </Route>
+            <Route path="/experience">
+                <Experience/>
+            </Route>
+            <Route path="/reservation">
+                <Reservation/>
+            </Route>
+        </Switch>
 
-  </Router>
+    </Router>
 
 }
