@@ -11,7 +11,6 @@ export const Home = () => {
       <NavigationBar />
       <MainCarousel />
       <Experience />
-      <Footer />
     </div>
   )
 }

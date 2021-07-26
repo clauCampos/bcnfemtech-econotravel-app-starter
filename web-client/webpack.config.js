@@ -16,6 +16,13 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         clean: true
     },
+
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
+
     resolve: {
         extensions: [".js", ".jsx", ".scss", ".css"]
     },
