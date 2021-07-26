@@ -3,6 +3,8 @@ import * as React from "react";
 
 export const Footer = () => {
   return (
-    <p> pepito </p>
+      <section className={"footer"}>
+        <p>ECONOTRAVEL © 2021. All rights reserved.</p>
+      </section>
   )
 }
