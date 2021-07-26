@@ -1,11 +1,12 @@
 import * as React from "react";
+import {Cards} from "./Cards";
 
-import {TravelCard} from "./TravelCard";
+
 
 export const Experience = () => {
   return (
     <section className="ExperienceSection">
-      <TravelCard />
+      <Cards />
       {/* {props.experiences.map(experiences =>
         <TravelCard experiences={experiences}/>
       )}*/}

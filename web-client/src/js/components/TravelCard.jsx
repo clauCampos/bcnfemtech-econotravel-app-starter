@@ -1,6 +1,9 @@
 import * as React from "react";
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import img from "./assets/about-banner.jpg";
+import {Button, Card, Form} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 export const TravelCard = (props) => {
     return (
@@ -8,7 +11,7 @@ export const TravelCard = (props) => {
             <div className="filters">
 
             </div>
-            <div className="tarjetas">
+            { /*<div className="tarjetas">
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
                         <div className="single_place">
@@ -37,7 +40,23 @@ export const TravelCard = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <Card className="card-container mb-3 animate__animated  animate__zoomIn" style={{ color: "#000"} }>
+
+                <div className="overflow">
+                    <Card.Img src={props.image} className="card-img-top"/>
+                </div>
+
+                <Card.Body>
+                    <Card.Title >{props.title}</Card.Title>
+                    <Card.Text>{props.text}</Card.Text>
+                    <Button className="btn btn-outline-success" variant="success" >Book now </Button>
+                </Card.Body>
+            </Card>
+
+
         </div>
+
     )
 }

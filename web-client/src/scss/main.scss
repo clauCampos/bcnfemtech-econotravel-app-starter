@@ -4,7 +4,8 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.05);
+ /* background-color: rgba(0, 0, 0, 0.05);*/
+  background-color: #6EA60C;
 }
 html {
   color: #000;
@@ -398,4 +399,32 @@ section {
 
 
 
-// RESERVAS SECTION:
+// CARDS SECTION:
+.container{
+  display: flex;
+
+}
+.experiencias{
+
+  display: flex;
+  background-attachment: fixed;
+  .overflow{
+    overflow: hidden;
+  }
+  .card-img-top{
+    transition: all 0.5s ease-in-out ;
+  }
+  .card-img-top:hover{
+    transform: scale(1.5);
+
+  }
+  Button{
+    color: #100d0d;
+  }
+  .card-container:hover{
+    box-shadow: 5px 10px 20px 1px rgba(255,255,255,0.273) !important;
+    transition: all 0.7ms linear;
+  }
+
+
+}
