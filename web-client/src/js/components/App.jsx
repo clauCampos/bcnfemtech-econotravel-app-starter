@@ -5,25 +5,26 @@ import {Home} from "./Home";
 import {About} from "./About";
 import {Experience} from "./Experience";
 import {Reservation} from "./Reservation";
+import {Footer} from "./Footer";
 
 export const App = () => {
     return <Router>
-        <NavigationBar/>
+        <NavigationBar />
         <Switch>
             <Route exact path="/">
-                <Home/>
+                <Home />
             </Route>
             <Route path="/about">
-                <About/>
+                <About />
             </Route>
             <Route path="/experience">
-                <Experience/>
+                <Experience />
             </Route>
             <Route path="/reservation">
-                <Reservation/>
+                <Reservation />
             </Route>
         </Switch>
-
+        <Footer />
     </Router>
 
 }
