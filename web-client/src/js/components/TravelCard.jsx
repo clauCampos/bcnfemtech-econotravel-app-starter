@@ -19,18 +19,23 @@ export const TravelCard = (props) => {
                 <Card.Body>
                     <Card.Header >{props.header}</Card.Header>
                     <Card.Title>{props.title}</Card.Title>
+
+                    <div className={"card__details"}>
+                        <Card.Img className="bike" src={props.bike} alt={"bike"} />
+                        <Card.Text className="bicicleta__duracion">{}</Card.Text>
+                        <Card.Img className="clock" src={props.clock} alt={"Duration"} />
+                        <Card.Text className="card__duracion">{}</Card.Text>
+                        <Card.Img className="allAges" src={props.age} alt={"Todas las edades"} />
+                        <Card.Text className="todasLasEdades__duration">{props.text}</Card.Text>
+                    </div>
+
                     <div className="card__reviews">
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-                        <Card.Text className="card__duration">{props.text}</Card.Text>
-                    </div>
-                    <div className={"card__details"}>
-                        <Card.Img className="bike" src={props.bike} alt={"bike"} />
-                        <Card.Img className="clock" src={props.clock} alt={"Duration"} />
-                        <Card.Img className="allAges" src={props.age} alt={"Todas las edades"} />
+
                     </div>
                     <Button className="btn btn-outline-success" variant="success" >Book now </Button>
                 </Card.Body>
