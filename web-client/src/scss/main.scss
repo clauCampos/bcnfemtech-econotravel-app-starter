@@ -36,12 +36,16 @@ section {
   }
 }
 .footer {
-  background-color: #4B7F55;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 20px 0 5px;
-  width: 100%;
-  align-content: center;
+  p {
+    background-color: #4B7F55;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    align-content: center;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 
@@ -113,7 +117,7 @@ section {
 .navigationBar{
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   margin: 0;
   padding: 15px 30px;
   background-color: #FFF;
@@ -132,7 +136,7 @@ section {
     text-decoration: none;
     color: #000;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 0 20px;
 
@@ -141,6 +145,13 @@ section {
       font-weight: 600;
     }
   }
+  .menu__icons {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+  }
+
   .searchBar {
 
     input {
@@ -149,7 +160,7 @@ section {
       padding: 10px 20px;
       margin-right: 20px;
     }
-    input:is([type="submit"]) {
+    input([type="submit"]) {
       background-color: #4B7F55;
       color: #FFF;
     }
@@ -158,6 +169,39 @@ section {
 
 
 
+// Select Bar
+
+.select-bar {
+  background-color: #6EA60C;
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 60px;
+
+  .title__search {
+    font-size: 1.4rem;
+  }
+  .select__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .select__group {
+      color: #333;
+      border: thin solid #FFF;
+      border-radius: 20px;
+      text-align: center;
+      }
+
+    Button {
+      border: thin solid #FFF;
+      border-radius: 20px;
+      padding: 0 30px;
+    }
+  }
+}
 
 
 
