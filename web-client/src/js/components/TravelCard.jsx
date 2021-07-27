@@ -19,7 +19,7 @@ export const TravelCard = (props) => {
                 <Card.Body>
                     <Card.Header >{props.header}</Card.Header>
                     <Card.Title>{props.title}</Card.Title>
-                    <div className={"card__reviews"}>
+                    <div className="card__reviews">
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
                         <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
