@@ -12,8 +12,8 @@ export const NavigationBar = () => {
       <div className={"menu__links"}>
         <Link to={"/"}>EconoTravel</Link>
         <Link to={"/about"}>Quienes somos</Link>
-        <Link to={"/Experience"}>Experiencias</Link>
-        <Link to={"/reservas"}>Reservas</Link>
+        <Link to={"/experience"}>Experiencias</Link>
+        <Link to={"/bookings"}>Reservas</Link>
       </div>
         <ul>
           <li>

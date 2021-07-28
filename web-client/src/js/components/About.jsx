@@ -1,4 +1,5 @@
 import * as React from "react";
+import {ImagenesFooter} from "./ImagenesFooter";
 
 export const About = () => {
   return (
@@ -18,6 +19,7 @@ export const About = () => {
     <div className={"aboutSection__img"}>
       <p> Conoce nuestras experiencias</p>
     </div>
+    <ImagenesFooter />
   </section>
   )
 }
