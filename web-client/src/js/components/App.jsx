@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {NavigationBar} from "./NavigationBar";
-import {Home} from "./Home";
+import {Home} from "./";
 import {About} from "./About";
 import {Experience} from "./Experience";
 import {Reservation} from "./Reservation";
@@ -21,7 +21,7 @@ export const App = () => {
             <Route path="/experience">
                 <Experience />
             </Route>
-            <Route path="/reservation">
+            <Route path="/reservas">
                 <Reservation />
             </Route>
         </Switch>

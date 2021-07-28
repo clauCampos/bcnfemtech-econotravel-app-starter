@@ -3,6 +3,7 @@ import {Button, Card} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom";
 
+
 export const TravelCard = (props) => {
     return (
         <div className="experienciasSection">
@@ -14,7 +15,6 @@ export const TravelCard = (props) => {
                     <Card.Body>
                         <Card.Header className="card__title">{props.header}</Card.Header>
                         <Card.Title className="card__text">{props.title}</Card.Title>
-
                         <div>
                             <ul className={"card__details"}>
                                 <li>
@@ -31,7 +31,6 @@ export const TravelCard = (props) => {
                                 </li>
                             </ul>
                         </div>
-
                         <div>
                             <ul className="card__reviews">
                                 <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
@@ -46,11 +45,6 @@ export const TravelCard = (props) => {
                     </Card.Body>
                 </div>
             </Card>
-
-
-
-
         </div>
-
     )
 }

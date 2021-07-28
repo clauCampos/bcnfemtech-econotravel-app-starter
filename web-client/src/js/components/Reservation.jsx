@@ -1,13 +1,17 @@
 import * as React from 'react';
-import {Footer} from "./Footer";
+import {ImagenesFooter} from "./ImagenesFooter";
+
+
+
+
 
 export const Reservation = () => {
   return (
-      <div>
-          <h1> Holaaaaaaaaaaaaaaa </h1>
-          <Footer />
+      <>
+          <p> Aqui deberia ir mas contenio </p>
+          <ImagenesFooter />
 
-      </div>
+      </>
 
   )
 }

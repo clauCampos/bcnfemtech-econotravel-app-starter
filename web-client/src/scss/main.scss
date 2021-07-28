@@ -1,10 +1,8 @@
-
 // GENERAL STYLES
-
 body{
   margin: 0;
   padding: 0;
- /* background-color: rgba(0, 0, 0, 0.05);*/
+  /* background-color: rgba(0, 0, 0, 0.05);*/
   background-color: #6EA60C;
 }
 html {
@@ -13,7 +11,6 @@ html {
   font-size: 1rem;
   line-height: 2rem;
 }
-
 section {
   padding: 150px 0;
   text-align: center;
@@ -35,13 +32,7 @@ section {
     }
   }
 }
-
-
-
-
-
 // NAVBAR
-
 .navigationBar {
   display: flex;
   justify-content: space-around;
@@ -53,11 +44,9 @@ section {
   position: fixed;
   width: 100%;
   z-index: 1;
-
   .logo {
     max-width: 130px;
   }
-
   a {
     text-decoration: none;
     color: #000;
@@ -65,13 +54,11 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 20px;
-
     &:hover {
       color: #6EA60C;
       font-weight: 600;
     }
   }
-
   .menuIcons {
     ul {
       display: flex;
@@ -80,107 +67,87 @@ section {
     }
   }
 }
-
-  // Select Bar
-
-  .select-bar {
-    background-color: #6EA60C;
-    width: 100%;
-    color: #FFF;
+// Select Bar
+.select-bar {
+  background-color: #6EA60C;
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 60px;
+  .title__search {
+    font-size: 1.4rem;
+  }
+  .select__form {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 30px 60px;
-
-    .title__search {
-      font-size: 1.4rem;
+    gap: 30px;
+    .select__group {
+      color: #333;
+      border: thin solid #FFF;
+      border-radius: 20px;
+      text-align: center;
     }
-
-    .select__form {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-
-      .select__group {
-        color: #333;
-        border: thin solid #FFF;
-        border-radius: 20px;
-        text-align: center;
-      }
-
-      Button {
-        border: thin solid #FFFFFF;
-        border-radius: 20px;
-        padding: 0 30px;
-        color: #FFFFFF;
-        background-color: transparent;
-
-        &:hover {
-          background-color: #FFFFFF;
-          color: #6EA60C;
-        }
-      }
-    }
-  }
-
-
-  // ABOUT SECTION:
-
-  .aboutSection {
-
-    .aboutSection__text {
-      padding: 50px;
-    }
-
-    .aboutSection__img {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
-
-  // EXPERIENCIAS SECTION:
-
-  .catalogoSection {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-
-    .experiencias {
-      width: 100px;
-      border: thin solid black;
-      border-radius: 10px;
-      margin: 10px;
-      padding: 20px;
-
+    Button {
+      border: thin solid #FFFFFF;
+      border-radius: 20px;
+      padding: 0 30px;
+      color: #FFFFFF;
+      background-color: transparent;
       &:hover {
-        transform: translate(1px, 1px);
-        background-color: cornflowerblue;
-        cursor: pointer;
+        background-color: #FFFFFF;
+        color: #6EA60C;
       }
     }
   }
-
-
-  // CARDS SECTION:
+}
+// ABOUT SECTION:
+.aboutSection {
+  .aboutSection__text {
+    padding: 50px;
+  }
+  .aboutSection__img {
+    width: 100%;
+    margin: 0;
+  }
+}
+// EXPERIENCIAS SECTION:
+.catalogoSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  .experiencias {
+    width: 100px;
+    border: thin solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    &:hover {
+      transform: translate(1px, 1px);
+      background-color: cornflowerblue;
+      cursor: pointer;
+    }
+  }
+}
+// CARDS SECTION:
 .experienciasSection {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   .container {
     display: flex;
-
     .overflow {
       overflow: hidden;
     }
   }
-    .card-img-top {
-      transition: all 0.5s ease-in-out;
-    }
-    .card-img-top:hover {
-      transform: scale(1.05);
-    }
+  .card-img-top {
+    transition: all 0.5s ease-in-out;
   }
+  .card-img-top:hover {
+    transform: scale(1.05);
+  }
+}
 .card__item {
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -203,7 +170,6 @@ section {
     line-height: 1.2rem;
     font-weight: 400;
     margin-bottom: 40px;
-
   }
   .card__details {
     display: flex;
@@ -226,11 +192,9 @@ section {
       margin: 0 0 30px 10px;
       font-size: 1rem;
       color: #666;
-
     }
   }
 }
-
 .btn__card {
   background-color: #6EA60C;
   color: #FFF;
@@ -238,23 +202,12 @@ section {
   border-radius: 20px;
   padding: 10px 30px;
   text-decoration: none;
-
   &:hover {
     background-color: #FFFFFF;
     color: #4B7F55;
   }
 }
-
-
-
-
-
-
-
-
-
-  //FOOTER
-
+//FOOTER
 .footer {
   p {
     background-color: #4B7F55;
@@ -265,10 +218,5 @@ section {
     align-content: center;
     font-size: 1rem;
     line-height: 1rem;
-    position: fixed;
-    bottom: 0;
   }
 }
-
-
-

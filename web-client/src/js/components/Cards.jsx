@@ -11,7 +11,6 @@ import bike from './assets/bici.png'
 import clock from './assets/clock.png'
 import age from './assets/allAges.png'
 
-
 const cards = [
     {
         id:1,
@@ -23,7 +22,6 @@ const cards = [
         age: age,
         stars: stars,
         text: '(18 Reviews)'
-
     },
     {
         id:2,
@@ -80,9 +78,7 @@ const cards = [
         stars: stars,
         text: '(26 Reviews)'
     }
-
 ]
-
 export function Cards(){
     return(
         <div className="container">
@@ -94,7 +90,6 @@ export function Cards(){
                         </div>
                     ))
                 }
-
             </div>
         </div>
     )
