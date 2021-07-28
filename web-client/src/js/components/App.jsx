@@ -21,7 +21,7 @@ export const App = () => {
             <Route path="/experience">
                 <Experience />
             </Route>
-            <Route path="/bookings">
+            <Route path="/reservas">
                 <Reservation />
             </Route>
         </Switch>
