@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {NavigationBar} from "./NavigationBar";
-import {Home} from "./";
+import {Home} from "./Home";
 import {About} from "./About";
 import {Experience} from "./Experience";
 import {Reservation} from "./Reservation";
