@@ -11,9 +11,9 @@ export const Select = () => {
                 <div className="select__form">
                     <Form.Select  className={"select__group"} aria-label="Floating label select example">
                         <option>Experiencias</option>
-                        <option value="1">Paseo en bicicleta por el Montseny</option>
-                        <option value="2">Descubre la costa Brava en barco de vela</option>
-                        <option value="3">Descubre la Barcelona Modernista de noche</option>
+                        <option value="1">Montaña</option>
+                        <option value="2">Campo</option>
+                        <option value="3">Ciudad</option>
                     </Form.Select>
                     <Form.Select className={"select__group"} aria-label="Floating label select example">
                         <option>Tipos de tours</option>
