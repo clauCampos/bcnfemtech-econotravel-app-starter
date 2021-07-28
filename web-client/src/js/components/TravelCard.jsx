@@ -1,44 +1,50 @@
 import * as React from "react";
-import {BrowserRouter as Router, Link} from "react-router-dom";
-import {Button, Card, Form} from "react-bootstrap";
+import {Button, Card} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Link} from "react-router-dom";
 
 export const TravelCard = (props) => {
     return (
-        <div className="experiencias">
-            <div className="filters">
-
-            </div>
-
-            <Card className="card-container mb-3 animate__animated  animate__zoomIn" style={{ color: "#000"} }>
-
+        <div className="experienciasSection">
+            <Card className="card-container mb-3 animate__animated animate__zoomIn card__item" style={{ color: "#000"} }>
                 <div className="overflow">
-                    <Card.Img src={props.image} className="card-img-top"/>
+                    <Card.Img className="card-img-top" src={props.image} />
                 </div>
+                <div className="card__body">
+                    <Card.Body>
+                        <Card.Header className="card__title">{props.header}</Card.Header>
+                        <Card.Title className="card__text">{props.title}</Card.Title>
 
-                <Card.Body>
-                    <Card.Header >{props.header}</Card.Header>
-                    <Card.Title>{props.title}</Card.Title>
+                        <div>
+                            <ul className={"card__details"}>
+                                <li>
+                                    <Card.Img className="icon" src={props.bike} alt={"Bicicleta"} />
+                                    <Card.Text className="card__text">{}</Card.Text>
+                                </li>
+                                <li>
+                                    <Card.Img className="icon" src={props.clock} alt={"Duración"} />
+                                    <Card.Text className="card__text">{}</Card.Text>
+                                </li>
+                                <li>
+                                    <Card.Img className="{icon}" src={props.age} alt={"Todas las edades"} />
+                                    <Card.Text className="card__text">{}</Card.Text>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div className={"card__details"}>
-                        <Card.Img className="bike" src={props.bike} alt={"bike"} />
-                        <Card.Text className="bicicleta__duracion">{}</Card.Text>
-                        <Card.Img className="clock" src={props.clock} alt={"Duration"} />
-                        <Card.Text className="card__duracion">{}</Card.Text>
-                        <Card.Img className="allAges" src={props.age} alt={"Todas las edades"} />
-                        <Card.Text className="todasLasEdades__duration">{props.text}</Card.Text>
-                    </div>
-
-                    <div className="card__reviews">
-                        <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-                        <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-                        <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-                        <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-                        <Card.Img className="star" src={props.stars} alt={"Reviews icon"} />
-
-                    </div>
-                    <Button className="btn btn-outline-success" variant="success" >Book now </Button>
-                </Card.Body>
+                        <div>
+                            <ul className="card__reviews">
+                                <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
+                                <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
+                                <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
+                                <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
+                                <li><Card.Img className={"star"} src={props.stars} alt={"Reviews icon"} /></li>
+                                <li><Card.Text className="reviews__text">{props.text}</Card.Text></li>
+                            </ul>
+                        </div>
+                        <Link to={"/Experience"} className={"btn__card"}>Ver experiencia</Link>
+                    </Card.Body>
+                </div>
             </Card>
 
 

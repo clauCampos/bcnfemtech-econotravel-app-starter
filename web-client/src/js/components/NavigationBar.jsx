@@ -15,17 +15,19 @@ export const NavigationBar = () => {
         <Link to={"/Experience"}>Experiencias</Link>
         <Link to={"/reservas"}>Reservas</Link>
       </div>
+      <div className={"menuIcons"}>
         <ul>
-          <li>
-            <Link><FontAwesomeIcon icon={faPhoneAlt} /> Contáctanos </Link>
-          </li>
-          <li>
-            <Link><FontAwesomeIcon icon={faFacebook} /></Link>
-          </li>
-          <li>
-            <Link><FontAwesomeIcon icon={faInstagram} /></Link>
-          </li>
-        </ul>
+            <li>
+              <Link><FontAwesomeIcon icon={faPhoneAlt} /> Contáctanos</Link>
+            </li>
+            <li>
+              <Link><FontAwesomeIcon icon={faFacebook} /> Facebook</Link>
+            </li>
+            <li>
+              <Link><FontAwesomeIcon icon={faInstagram} /> Instagram</Link>
+            </li>
+          </ul>
+      </div>
         {/*
         <div className={"searchBar"}>
         <input type={"text"} placeholder={"Encuenta tu experiencia"}/>

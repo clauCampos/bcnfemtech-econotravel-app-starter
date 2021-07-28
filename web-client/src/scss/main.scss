@@ -35,78 +35,6 @@ section {
     }
   }
 }
-.footer {
-  p {
-    background-color: #4B7F55;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    align-content: center;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -114,10 +42,10 @@ section {
 
 // NAVBAR
 
-.navigationBar{
+.navigationBar {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   margin: 0;
   padding: 15px 30px;
   background-color: #FFF;
@@ -129,9 +57,7 @@ section {
   .logo {
     max-width: 130px;
   }
-  .menu__links {
-    margin-right: 20px;
-  }
+
   a {
     text-decoration: none;
     color: #000;
@@ -140,66 +66,182 @@ section {
     text-transform: uppercase;
     margin: 0 20px;
 
-    &:hover{
+    &:hover {
       color: #6EA60C;
       font-weight: 600;
     }
   }
-  .menu__icons {
+
+  .menuIcons {
+    ul {
+      display: flex;
+      list-style: none;
+      margin-top: 15px;
+    }
+  }
+}
+
+  // Select Bar
+
+  .select-bar {
+    background-color: #6EA60C;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 30px 60px;
+
+    .title__search {
+      font-size: 1.4rem;
+    }
+
+    .select__form {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      .select__group {
+        color: #333;
+        border: thin solid #FFF;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      Button {
+        border: thin solid #FFFFFF;
+        border-radius: 20px;
+        padding: 0 30px;
+        color: #FFFFFF;
+        background-color: transparent;
+
+        &:hover {
+          background-color: #FFFFFF;
+          color: #6EA60C;
+        }
+      }
+    }
+  }
+
+
+  // ABOUT SECTION:
+
+  .aboutSection {
+
+    .aboutSection__text {
+      padding: 50px;
+    }
+
+    .aboutSection__img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+
+  // EXPERIENCIAS SECTION:
+
+  .catalogoSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .experiencias {
+      width: 100px;
+      border: thin solid black;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 20px;
+
+      &:hover {
+        transform: translate(1px, 1px);
+        background-color: cornflowerblue;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  // CARDS SECTION:
+.experienciasSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .container {
+    display: flex;
+
+    .overflow {
+      overflow: hidden;
+    }
+  }
+    .card-img-top {
+      transition: all 0.5s ease-in-out;
+    }
+    .card-img-top:hover {
+      transform: scale(1.05);
+    }
+  }
+.card__item {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  &:hover {
+    border: 2px solid #6EA60C;
+  }
+}
+.card__body {
+  .card__title {
+    color: #4B7F55;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: thin solid #CCC;
+    margin-bottom: 30px;
+  }
+  .card__text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+  }
+  .card__details {
     display: flex;
     justify-content: space-between;
     list-style: none;
-
-  }
-
-  .searchBar {
-
-    input {
-      border-radius: 20px;
-      border: thin solid #4B7F55;
-      padding: 10px 20px;
-      margin-right: 20px;
-    }
-    input([type="submit"]) {
-      background-color: #4B7F55;
-      color: #FFF;
+    margin: 0 0 30px;
+    img {
+      height: 30px;
     }
   }
-}
-
-
-
-// Select Bar
-
-.select-bar {
-  background-color: #6EA60C;
-  width: 100%;
-  color: #FFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 30px 60px;
-
-  .title__search {
-    font-size: 1.4rem;
-  }
-  .select__form {
+  .card__reviews {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-
-    .select__group {
-      color: #333;
-      border: thin solid #FFF;
-      border-radius: 20px;
-      text-align: center;
-      }
-
-    Button {
-      border: thin solid #FFF;
-      border-radius: 20px;
-      padding: 0 30px;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0 0 30px;
+    img {
+      height: 15px;
     }
+    .reviews__text {
+      margin: 0 0 30px 10px;
+      font-size: 1rem;
+      color: #666;
+
+    }
+  }
+}
+
+.btn__card {
+  background-color: #6EA60C;
+  color: #FFF;
+  border: thin solid #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #4B7F55;
   }
 }
 
@@ -211,281 +253,20 @@ section {
 
 
 
+  //FOOTER
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ABOUT SECTION:
-
-.aboutSection{
-
-  .aboutSection__text {
-    padding: 50px;
-  }
-  .aboutSection__img {
+.footer {
+  p {
+    background-color: #4B7F55;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
     width: 100%;
-    margin: 0;
+    align-content: center;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// EXPERIENCIAS SECTION:
-
-.catalogoSection{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  .experiencias{
-    width: 100px;
-    border: thin solid black ;
-    border-radius:  10px;
-    margin: 10px;
-    padding: 20px;
-    &:hover{
-      transform: translate(1px, 1px);
-      background-color: cornflowerblue;
-      cursor: pointer;
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.select-bar{
-  Button{
-    background-color: #6EA60C;
-    color: #FFF;
-  }
-}
-
-
-
-// CARDS SECTION:
-.container{
-  display: flex;
-
-}
-.experiencias{
-
-  display: flex;
-  background-attachment: fixed;
-  .overflow{
-    overflow: hidden;
-  }
-  .card-img-top{
-    transition: all 0.5s ease-in-out ;
-  }
-  .card-img-top:hover{
-    transform: scale(1.5);
-
-  }
-  Button{
-    background-color: #6EA60C;
-    color: #FFF;
-  }
-  .card-container:hover{
-    box-shadow: 5px 10px 20px 1px rgba(255,255,255,0.273) !important;
-    transition: all 0.7ms linear;
-  }
-
-
-}
