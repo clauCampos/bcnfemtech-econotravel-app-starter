@@ -12,7 +12,7 @@ export const NavigationBar = () => {
             <img className={"logo"} src={logo} alt={'EconoTravel logo'}/>
             <div className={"menu__links"}>
                 <Link to={"/"}>EconoTravel</Link>
-                <Link to={"/about"}>Quienes somos</Link>
+                <Link to={"/about"}>Quiénes somos</Link>
                 <Link to={"/experience"}>Experiencias</Link>
                 <Link to={"/reservas"}>Reservas</Link>
             </div>
