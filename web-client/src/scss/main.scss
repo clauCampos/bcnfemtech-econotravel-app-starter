@@ -63,6 +63,23 @@ html {
   }
 }
 
+// HOME
+// Carousel
+.carousel__item {
+  height: 621px;
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  }
+  .carousel__text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    margin: 0 0 50px;
+  }
+}
+
 // Select Bar
 .select-bar {
   background-color: #6EA60C;
@@ -71,7 +88,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 50px;
+  padding: 30px 100px;
   .title__search {
     font-size: 1.4rem;
   }
@@ -79,14 +96,13 @@ html {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 0 60px;
     .select__group {
       color: #333;
       border: thin solid #FFF;
       border-radius: 20px;
       text-align: left;
-      padding: 5px 120px 5px 20px;
-      option{}
+      padding: 5px 180px 5px 20px;
+
     }
     Button {
       border: thin solid #FFFFFF;
@@ -100,6 +116,9 @@ html {
       }
     }
   }
+}
+.wrapper__home {
+  padding: 50px 0 0;
 }
 
 // SECTION:
@@ -120,19 +139,21 @@ section {
       font-size: 2rem;
       font-weight: 600;
       width: 100%;
-
     }
     p {
       font-size: 1rem;
       margin-bottom: 50px;
     }
   }
+  .wrapper__home {
+    object-position: top;
+  }
 }
 
 // ABOUT SECTION:
 .aboutSection {
   .aboutSection__text {
-    padding: 30px 160px;
+    padding: 30px 200px;
   }
   .text--intro {
     font-size: 1.1rem;
@@ -154,7 +175,7 @@ section {
 
 // EXPERIENCIAS SECTION:
 .experienceSection {
- padding: 0;
+  padding: 0;
 }
 
 
@@ -248,8 +269,21 @@ section {
     }
   }
 }
+//RESERVAS
 
+.reservasSection {
+  .reservas {
+    width: 66.6666%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .reservas__form {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0 30px 60px;
+  }
 
+}
 
 
 //FOOTER
