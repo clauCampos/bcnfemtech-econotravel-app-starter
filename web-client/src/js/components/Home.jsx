@@ -2,7 +2,7 @@ import * as React from 'react';
 import {NavigationBar} from "./NavigationBar";
 import {Experience} from "./Experience";
 import {MainCarousel} from "./MainCarousel";
-import {Select} from "./Select";
+import {Selection} from "./Selection";
 
 
 
@@ -12,7 +12,7 @@ export const Home = () => {
     <div>
       <NavigationBar />
       <MainCarousel />
-      <Select />
+      <Selection />
       <Experience />
     </div>
   )
