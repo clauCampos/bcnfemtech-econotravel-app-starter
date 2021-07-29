@@ -18,9 +18,13 @@ const cards = [
         title: 'Disfruta de un paseo en bicicleta por el increíble Parque Natural del Montseny. Una escapada perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.',
         image: img1,
         bike: bike,
+        mountain: montana,
+        LongWalks: ,
         clock : clock,
         age: age,
         stars: stars,
+        hours: '4h',
+        price: '250€ p/p',
         text: '(18 Reviews)'
     },
     {
