@@ -71,19 +71,22 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 60px;
+  padding: 30px 50px;
   .title__search {
     font-size: 1.4rem;
   }
   .select__form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+    padding: 0 60px;
     .select__group {
       color: #333;
       border: thin solid #FFF;
       border-radius: 20px;
-      text-align: center;
+      text-align: left;
+      padding: 5px 120px 5px 20px;
+      option{}
     }
     Button {
       border: thin solid #FFFFFF;

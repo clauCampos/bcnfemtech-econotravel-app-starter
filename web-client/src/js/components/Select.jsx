@@ -1,29 +1,27 @@
 import * as React from "react";
-import {Button, FloatingLabel, Form} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import {Field, ErrorMessage} from "formik";
+import {TextError} from "./TextError";
 
 
-export const Select = () => {
-    return(
-        <div className="select__bar">
-            <FloatingLabel controlId="floatingSelect" className="select-bar" >
-                <h4 className={"title__search"}>Buscas una experiencia?  Te ayudamos</h4>
-                <div className="select__form">
-                    <Form.Select  className={"select__group"} aria-label="Floating label select example">
-                        <option>Experiencias</option>
-                        <option value="1">Montaña</option>
-                        <option value="2">Campo</option>
-                        <option value="3">Ciudad</option>
-                    </Form.Select>
-                    <Form.Select className={"select__group"} aria-label="Floating label select example">
-                        <option>Tipos de tours</option>
-                        <option value="1">Barcos</option>
-                        <option value="2">Bicicleta</option>
-                        <option value="3">Caminata</option>
-                    </Form.Select>
-                    <Button className="btn btn-outline-success btn-search" variant="success" >Buscar! </Button>
-                </div>
-            </FloatingLabel>
+export function Select(props){
+    const {label, name, options, ...rest } = props
+
+    return (
+        <div className='form-control'>
+            <label htmlFor={name}>{label}</label>
+            <Field as='select' id={name} name={name} {...rest}>
+                {
+                    options.map(option =>{
+                        return(
+                            <option key={option.value} value={option.value}>
+                                {option.key}
+                            </option>
+                        )
+                    })
+                }
+
+            </Field>
+            <ErrorMessage name={name} component={TextError} />
         </div>
     )
 }
