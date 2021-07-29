@@ -10,6 +10,8 @@ import stars from './assets/star.png'
 import bike from './assets/bici.png'
 import clock from './assets/clock.png'
 import age from './assets/allAges.png'
+import montana from './assets/montana.png'
+import towalk from './assets/caminata.png'
 
 const cards = [
     {
@@ -18,8 +20,9 @@ const cards = [
         title: 'Disfruta de un paseo en bicicleta por el increíble Parque Natural del Montseny. Una escapada perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.',
         image: img1,
         bike: bike,
+        texbike:'Bicicleta',
         mountain: montana,
-        LongWalks: ,
+        LongWalks: towalk,
         clock : clock,
         age: age,
         stars: stars,
