@@ -5,14 +5,10 @@ import img3 from './assets/imgLibrary/dil.jpg'
 
 export const ImagenesFooter = () => {
     return(
-        <div>
-
-                <img src={img1} style={{width: '505px', height: '250px'}}/>
-                <img src={img2}  style={{width: '505px', height: '250px'}}/>
-                <img src={img3}  style={{width: '505px', height: '250px'}}/>
-
-        </div>
-
-        )
-
+        <section className={"imgGallery"}>
+            <img src={img1} />
+            <img src={img2} />
+            <img src={img3} />
+        </section>
+    )
 }
