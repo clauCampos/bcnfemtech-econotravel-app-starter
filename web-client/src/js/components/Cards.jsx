@@ -15,7 +15,7 @@ const cards = [
     {
         id:1,
         header: 'Paseo en bicicleta por el Montseny',
-        title: 'Disfruta de un hermoso paseo en bicicleta por el increíble Parque Natural del Montseny. Una escapada veraniega perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.',
+        title: 'Disfruta de un paseo en bicicleta por el increíble Parque Natural del Montseny. Una escapada perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.',
         image: img1,
         bike: bike,
         clock : clock,
