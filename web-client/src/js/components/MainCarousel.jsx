@@ -17,8 +17,8 @@ export const MainCarousel = () => {
               alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Paseo en bicicleta por el Montseny</h3>
+            <p>Una escapada veraniega perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -30,8 +30,8 @@ export const MainCarousel = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Descubre la costa en barco de vela</h3>
+            <p>Disfruta de un hermoso paseo acuático en barco de vela por la increíble costa de Barcelona.</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -43,8 +43,8 @@ export const MainCarousel = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Descubre la Barcelona Modernista de noche</h3>
+            <p>Descubre los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
