@@ -2,6 +2,7 @@ import * as React from 'react';
 import {ImagenesFooter} from "./ImagenesFooter";
 
 import {FormikContainer} from "./FormikContainer";
+import {MiniCard} from "./MiniCard";
 
 
 export const Reservation = () => {
@@ -23,7 +24,7 @@ export const Reservation = () => {
                         <p> Para finalizar, acudiremos al restaurante María Rosa de Palautordera, donde disfrutaremos de una excelente comida casera
                             con butifarra blanca y negra y munxetes del Montseny.</p>
                         <div className={"reservas__icons"}>
-
+                            <MiniCard />
                         </div>
                     </div>
                     <div className={"reservas__form"}>
