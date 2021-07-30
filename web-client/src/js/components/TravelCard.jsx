@@ -22,6 +22,10 @@ export const TravelCard = (props) => {
                                     <Card.Text className={"icon__text"}>{}</Card.Text>
                                 </li>
                                 <li>
+                                    <Card.Img className={"icon"} src={props.toWalk} alt={"Caminar"} />
+                                    <Card.Text className={"icon__text"}>{}</Card.Text>
+                                </li>
+                                <li>
                                     <Card.Img className={"icon"} src={props.clock} alt={"Duración"} />
                                     <Card.Text className={"icon__text"}>{}</Card.Text>
                                 </li>

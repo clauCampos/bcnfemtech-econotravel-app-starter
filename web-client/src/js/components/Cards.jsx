@@ -10,6 +10,7 @@ import stars from './assets/star.png'
 import bike from './assets/bici.png'
 import clock from './assets/clock.png'
 import age from './assets/allAges.png'
+import toWalk from './assets/caminata.png'
 
 const cards = [
     {
@@ -18,6 +19,7 @@ const cards = [
         title: 'Disfruta de un paseo en bicicleta por el increíble Parque Natural del Montseny. Una escapada perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.',
         image: img1,
         bike: bike,
+        toWalk: toWalk,
         clock : clock,
         age: age,
         stars: stars,
@@ -29,6 +31,7 @@ const cards = [
         title: 'Disfruta de un hermoso paseo acuático en barco de vela por la increíble costa de Barcelona. Descubre los encantadores alrededores  y visita desde el mar sus más impresionantes playas y calas.',
         image: img2,
         bike: bike,
+        toWalk: toWalk,
         clock: clock,
         age: age,
         stars: stars,
@@ -40,6 +43,7 @@ const cards = [
         title: 'Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. Descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. ',
         image: img3,
         bike: bike,
+        toWalk: toWalk,
         clock: clock,
         age: age,
         stars: stars,
@@ -51,6 +55,7 @@ const cards = [
         title: 'Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. Descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. ',
         image: img4,
         bike: bike,
+        toWalk: toWalk,
         clock: clock,
         age: age,
         stars: stars,
@@ -62,6 +67,7 @@ const cards = [
         title: 'Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. Descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. ',
         image: img5,
         bike: bike,
+        toWalk: toWalk,
         clock: clock,
         age: age,
         stars:stars,
@@ -73,6 +79,7 @@ const cards = [
         title: 'Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. Descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. ',
         image: img6,
         bike: bike,
+        toWalk: toWalk,
         clock: clock,
         age: age,
         stars: stars,
@@ -86,7 +93,7 @@ export function Cards(){
                 {
                     cards.map(card =>(
                         <div className="col-md-5" key={card.id}>
-                            <TravelCard header={card.header} title={card.title} text={card.text} image={card.image} bike={card.bike} stars={card.stars} clock={card.clock} age={card.age}/>
+                            <TravelCard header={card.header} title={card.title} text={card.text} image={card.image} bike={card.bike} toWalk={card.toWalk}  stars={card.stars} clock={card.clock} age={card.age}/>
                         </div>
                     ))
                 }
