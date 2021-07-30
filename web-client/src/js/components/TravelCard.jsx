@@ -41,7 +41,7 @@ export const TravelCard = (props) => {
                                 <li><Card.Text className={"reviews__text"}>{props.text}</Card.Text></li>
                             </ul>
                         </div>
-                        <Link to={"/Experience"} className={"btn__card"}>Ver experiencia</Link>
+                        <Link to={"/Experience"} className="btn__card">Ver experiencia</Link>
                     </Card.Body>
                 </Card>
             </div>

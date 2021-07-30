@@ -63,6 +63,23 @@ html {
   }
 }
 
+// HOME
+// Carousel
+.carousel__item {
+  height: 621px;
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  }
+  .carousel__text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    margin: 0 0 50px;
+  }
+}
+
 // Select Bar
 .select-bar {
   background-color: #6EA60C;
@@ -71,7 +88,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 50px;
+  padding: 30px 100px;
   .title__search {
     font-size: 1.4rem;
   }
@@ -79,14 +96,13 @@ html {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 0 60px;
     .select__group {
       color: #333;
       border: thin solid #FFF;
       border-radius: 20px;
       text-align: left;
-      padding: 5px 120px 5px 20px;
-      option{}
+      padding: 5px 180px 5px 20px;
+
     }
     Button {
       border: thin solid #FFFFFF;
@@ -95,11 +111,14 @@ html {
       color: #FFFFFF;
       background-color: transparent;
       &:hover {
-        background-color: #FFFFFF;
-        color: #6EA60C;
+        background-color: #4B7F55;
+        color: #FFFFFF;
       }
     }
   }
+}
+.wrapper__home {
+  padding: 50px 0 0;
 }
 
 // SECTION:
@@ -120,19 +139,21 @@ section {
       font-size: 2rem;
       font-weight: 600;
       width: 100%;
-
     }
     p {
       font-size: 1rem;
       margin-bottom: 50px;
     }
   }
+  .wrapper__home {
+    object-position: top;
+  }
 }
 
 // ABOUT SECTION:
 .aboutSection {
   .aboutSection__text {
-    padding: 30px 160px;
+    padding: 30px 200px;
   }
   .text--intro {
     font-size: 1.1rem;
@@ -140,6 +161,9 @@ section {
     line-height: 2rem;
     color: #4B7F55;
     margin-bottom: 40px;
+  }
+  p {
+    text-align: justify;
   }
   .text__green {
     color: #4B7F55;
@@ -241,15 +265,99 @@ section {
         padding: 10px 30px;
         text-decoration: none;
         &:hover {
-          background-color: #FFFFFF;
-          color: #4B7F55;
+          background-color: #4B7F55;
+          color: #FFFFFF;
         }
       }
     }
   }
 }
+//RESERVAS
+
+.reservasSection {
+
+  .reservas {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 1.8rem;
+      color: #4B7F55;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    h5 {
+      font-size: 1.1rem;
+      color: #000;
+      margin-bottom: 20px;
+      padding: 5px 0;
+    }
+    .reservas__text--intro {
+      color: #4B7F55;
+      font-weight: 600;
+    }
+    p  {
+      margin-bottom: 20px;
+    }
+    .reservas__description {
+      text-align: justify;
+      padding: 80px;
+      width: 66.6666%;
+    }
+
+    .reservas__form {
+      padding: 60px 30px;
+      margin: 60px;
+      border: 2px solid #4B7F55;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      justify-content: space-around;
+      width: 33.3333%;
+
+      h4 {
+        font-size: 1.8rem;
+        color: #4B7F55;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+
+      .form-control {
+        margin: 10px 0;
+        padding: 10px;
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 20px;
 
 
+        label {
+          color: #4B7F55;
+          font-weight: 500;
+          width: 25%;
+          text-align: start;
+          font-size: 1rem;
+        }
+        input, textarea, select, #birthDate {
+          width: 75%;
+          padding: 5px 20px;
+
+        }
+      }
+      .btn__reservation {
+        background-color: #6EA60C;
+        color: #FFF;
+        border: thin solid #FFFFFF;
+        border-radius: 20px;
+        padding: 10px 50px;
+        margin: 30px 0;
+        text-decoration: none;
+        &:hover {
+          background-color: #4B7F55;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
 
 
 //FOOTER
