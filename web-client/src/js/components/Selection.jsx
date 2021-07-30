@@ -16,12 +16,12 @@ export const Selection = () => {
                         <option value="3">Ciudad</option>
                     </Form.Select>
                     <Form.Select className={"select__group"} aria-label="Floating label select example">
-                        <option>Tipos de tours</option>
-                        <option value="1">Barcos</option>
+                        <option>Tipo de tour</option>
+                        <option value="1">Barco</option>
                         <option value="2">Bicicleta</option>
                         <option value="3">Caminata</option>
                     </Form.Select>
-                    <Button className="btn btn-outline-success btn-search" variant="success" >Buscar! </Button>
+                    <Button className="btn btn-outline-success btn-search" variant="success" >Buscar!</Button>
                 </div>
             </FloatingLabel>
         </div>

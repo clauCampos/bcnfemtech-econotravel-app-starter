@@ -111,8 +111,8 @@ html {
       color: #FFFFFF;
       background-color: transparent;
       &:hover {
-        background-color: #FFFFFF;
-        color: #6EA60C;
+        background-color: #4B7F55;
+        color: #FFFFFF;
       }
     }
   }
@@ -162,6 +162,9 @@ section {
     color: #4B7F55;
     margin-bottom: 40px;
   }
+  p {
+    text-align: justify;
+  }
   .text__green {
     color: #4B7F55;
     font-size: 1.3rem;
@@ -175,7 +178,7 @@ section {
 
 // EXPERIENCIAS SECTION:
 .experienceSection {
-  padding: 0;
+ padding: 0;
 }
 
 
@@ -262,8 +265,8 @@ section {
         padding: 10px 30px;
         text-decoration: none;
         &:hover {
-          background-color: #FFFFFF;
-          color: #4B7F55;
+          background-color: #4B7F55;
+          color: #FFFFFF;
         }
       }
     }
@@ -272,17 +275,88 @@ section {
 //RESERVAS
 
 .reservasSection {
-  .reservas {
-    width: 66.6666%;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  .reservas__form {
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 0 30px 60px;
-  }
 
+  .reservas {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 1.8rem;
+      color: #4B7F55;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    h5 {
+      font-size: 1.1rem;
+      color: #000;
+      margin-bottom: 20px;
+      padding: 5px 0;
+    }
+    .reservas__text--intro {
+      color: #4B7F55;
+      font-weight: 600;
+    }
+    p  {
+      margin-bottom: 20px;
+    }
+    .reservas__description {
+      text-align: justify;
+      padding: 80px;
+      width: 66.6666%;
+    }
+
+    .reservas__form {
+      padding: 60px 30px;
+      margin: 60px;
+      border: 2px solid #4B7F55;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      justify-content: space-around;
+      width: 33.3333%;
+
+      h4 {
+        font-size: 1.8rem;
+        color: #4B7F55;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+
+      .form-control {
+        margin: 10px 0;
+        padding: 10px;
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 20px;
+
+
+        label {
+          color: #4B7F55;
+          font-weight: 500;
+          width: 25%;
+          text-align: start;
+          font-size: 1rem;
+        }
+        input, textarea, select, #birthDate {
+          width: 75%;
+          padding: 5px 20px;
+
+        }
+      }
+      .btn__reservation {
+        background-color: #6EA60C;
+        color: #FFF;
+        border: thin solid #FFFFFF;
+        border-radius: 20px;
+        padding: 10px 50px;
+        margin: 30px 0;
+        text-decoration: none;
+        &:hover {
+          background-color: #4B7F55;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
 }
 
 

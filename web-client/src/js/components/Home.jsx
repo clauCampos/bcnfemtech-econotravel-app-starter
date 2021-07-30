@@ -13,7 +13,9 @@ export const Home = () => {
       <NavigationBar />
       <MainCarousel />
       <Selection />
-      <Experience />
+      <section className="wrapper__home">
+          <Experience />
+      </section>
     </div>
   )
 }
