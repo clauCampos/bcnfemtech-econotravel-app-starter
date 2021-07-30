@@ -214,6 +214,19 @@ section {
       .card-img-top:hover {
         transform: scale(1.1);
       }
+      .card__price {
+        background-color: #6EA60C;
+        border-radius: 20px;
+        color: #FFFFFF;
+        padding: 5px 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+      }
     }
     .card__body {
       .card__title {
@@ -222,23 +235,31 @@ section {
         font-weight: 600;
         background-color: #FFFFFF;
         border-bottom: thin solid #CCC;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       .card__text {
         font-size: 1rem;
         line-height: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 30px;
+        font-weight: 500;
+        margin-bottom: 50px;
       }
       .card__details {
-        margin: 0 0 30px;
+        margin: 0 0 5px;
+
         .details__icons {
           list-style: none;
           display: flex;
+          align-content: baseline;
           justify-content: space-between;
           img {
-            height: 30px;
+            width: 30px;
+            margin-bottom: 10px;
           }
+        }
+        .details__icons--text {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 20px;
         }
       }
       .card__reviews {
@@ -252,7 +273,7 @@ section {
           height: 15px;
         }
         .reviews__text {
-          margin: 0 0 30px 10px;
+          margin: 3px 0 30px 10px;
           font-size: 1rem;
           color: #666;
         }

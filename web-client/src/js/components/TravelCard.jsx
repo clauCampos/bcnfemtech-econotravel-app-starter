@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Button, Card} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom";
 
@@ -11,6 +11,7 @@ export const TravelCard = (props) => {
                 <Card className={"card-container animate__animated animate__zoomIn card__item"}>
                     <div className={"card__image"}>
                         <Card.Img className={"card-img-top"} src={props.image} />
+                        <p className={"card__price"}>250€ p/p</p>
                     </div>
                     <Card.Body className={"card__body"}>
                         <Card.Header className={"card__title"}>{props.header}</Card.Header>
@@ -19,19 +20,19 @@ export const TravelCard = (props) => {
                             <ul className={"details__icons"}>
                                 <li>
                                     <Card.Img className={"icon"} src={props.bike} alt={"Bicicleta"} />
-                                    <Card.Text className={"icon__text"}>{}</Card.Text>
+                                    <p className="details__icons--text">Bicicleta</p>
                                 </li>
                                 <li>
-                                    <Card.Img className={"icon"} src={props.toWalk} alt={"Caminar"} />
-                                    <Card.Text className={"icon__text"}>{}</Card.Text>
+                                    <Card.Img className={"icon"} src={props.toWalk} alt={"Caminata"} />
+                                    <p className="details__icons--text">Caminata</p>
                                 </li>
                                 <li>
                                     <Card.Img className={"icon"} src={props.clock} alt={"Duración"} />
-                                    <Card.Text className={"icon__text"}>{}</Card.Text>
+                                    <p className="details__icons--text">4 horas</p>
                                 </li>
                                 <li>
                                     <Card.Img className={"icon"} src={props.age} alt={"Todas las edades"} />
-                                    <Card.Text className={"icon__text"}>{}</Card.Text>
+                                    <p className="details__icons--text">Todas las edades</p>
                                 </li>
                             </ul>
                         </div>
@@ -45,7 +46,7 @@ export const TravelCard = (props) => {
                                 <li><Card.Text className={"reviews__text"}>{props.text}</Card.Text></li>
                             </ul>
                         </div>
-                        <Link to={"/Experience"} className="btn__card">Ver experiencia</Link>
+                        <Link to={"/Reservation"} className="btn__card">Ver experiencia</Link>
                     </Card.Body>
                 </Card>
             </div>

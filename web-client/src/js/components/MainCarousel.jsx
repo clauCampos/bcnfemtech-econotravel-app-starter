@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Carousel} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from './assets/imgLibrary/montserrat.jpg';
-import img2 from './assets/imgLibrary/sagrada.jpg';
-import img3 from './assets/imgLibrary/hotelW.jpg';
+import img1 from './assets/img/montserrat.jpg';
+import img2 from './assets/img/sagrada.jpg';
+import img3 from './assets/img/hotelW.jpg';
 
 
 

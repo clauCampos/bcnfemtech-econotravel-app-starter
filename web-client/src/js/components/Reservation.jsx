@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {ImagenesFooter} from "./ImagenesFooter";
-
 import {FormikContainer} from "./FormikContainer";
 import {MiniCard} from "./MiniCard";
 
