@@ -23,7 +23,8 @@ const cards = [
         clock : clock,
         age: age,
         stars: stars,
-        text: '(18 Reviews)'
+        text: '(18 Reviews)',
+        price: '120€ p/p'
     },
     {
         id:2,
@@ -36,6 +37,7 @@ const cards = [
         age: age,
         stars: stars,
         text: '(20 Reviews)',
+        price: '250€ p/p'
     },
     {
         id:3,
@@ -47,7 +49,8 @@ const cards = [
         clock: clock,
         age: age,
         stars: stars,
-        text: '(43 Reviews)'
+        text: '(43 Reviews)',
+        price: '200€ p/p'
     },
     {
         id:4,
@@ -59,7 +62,8 @@ const cards = [
         clock: clock,
         age: age,
         stars: stars,
-        text : '(20 Reviews)'
+        text : '(20 Reviews)',
+        price: '118€ p/p'
     },
     {
         id:5,
@@ -71,7 +75,8 @@ const cards = [
         clock: clock,
         age: age,
         stars:stars,
-        text: '(12 Reviews)'
+        text: '(12 Reviews)',
+        price: '80€ p/p'
     },
     {
         id:6,
@@ -83,7 +88,8 @@ const cards = [
         clock: clock,
         age: age,
         stars: stars,
-        text: '(26 Reviews)'
+        text: '(26 Reviews)',
+        price: '250€ p/p'
     }
 ]
 export function Cards(){
@@ -93,7 +99,7 @@ export function Cards(){
                 {
                     cards.map(card =>(
                         <div className="col-md-5" key={card.id}>
-                            <TravelCard header={card.header} title={card.title} text={card.text} image={card.image} bike={card.bike} toWalk={card.toWalk}  stars={card.stars} clock={card.clock} age={card.age}/>
+                            <TravelCard price={card.price} header={card.header} title={card.title} text={card.text} image={card.image} bike={card.bike} toWalk={card.toWalk}  stars={card.stars} clock={card.clock} age={card.age}/>
                         </div>
                     ))
                 }

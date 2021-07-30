@@ -11,7 +11,7 @@ export const TravelCard = (props) => {
                 <Card className={"card-container animate__animated animate__zoomIn card__item"}>
                     <div className={"card__image"}>
                         <Card.Img className={"card-img-top"} src={props.image} />
-                        <p className={"card__price"}>250€ p/p</p>
+                        <p className={"card__price"}>{props.price}</p>
                     </div>
                     <Card.Body className={"card__body"}>
                         <Card.Header className={"card__title"}>{props.header}</Card.Header>
