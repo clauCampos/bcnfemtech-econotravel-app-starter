@@ -331,19 +331,17 @@ section {
     }
 
     .reservasCard__details {
-      margin: 0 0 5px;
-      width: 100%;
+      margin: 50px 0 5px;
 
       .reservasCard__icons {
         list-style: none;
-        display: flex;
         align-content: baseline;
+        display: flex;
         justify-content: space-between;
-        gap: 30px;
-        width: 100%;
 
         li {
-
+          margin: 0 10px;
+          justify-content: center;
 
           img {
             width: 30px;
